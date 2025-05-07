@@ -108,25 +108,25 @@
 }
 
 .win-line-row-0 {
-  top: calc(25% - 5px);
+  top: calc(19% - 5px);
   left: 15%;
   width: 70%;
-  height: 10px;
+  height: 8px;
 }
 
 .win-line-row-1 {
   top: calc(50% - 5px);
   left: 15%;
   width: 70%;
-  height: 10px;
+  height: 8px;
 }
 
 .win-line-row-2 {
-  top: calc(75% - 5px);
-  left: 15%;
-  width: 70%;
-  height: 10px;
-}
+    top: calc(82% - 4px);  
+    left: 15%;             
+    width: 70%;            
+    height: 8px;           
+  }
 
 .win-line-col-0 {
   top: 15%;
