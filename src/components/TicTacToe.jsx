@@ -1,5 +1,3 @@
-// Here are the modifications you need to make to your TicTacToe.js file:
-
 import React, { useState, useRef } from 'react'
 import './TikTacToe.css'
 import oIcon from '../assets/circle.png';
@@ -10,16 +8,16 @@ let data = ["","","","","","","","",""]
 const TikTacToe = () => {
     let [count, setCount] = useState(0);
     let [lock, setLock] = useState(false);
-    let [winLine, setWinLine] = useState(null); // Add this line
+    let [winLine, setWinLine] = useState(null); 
     let titleRef = useRef(null);
-    let boardRef = useRef(null); // Add this line
+    let boardRef = useRef(null); 
   
     const toggle = (e, num) => {
         if (lock) {
             return 0;
         }
         if (data[num] !== "") {
-            return; // Prevent overwriting an already filled box
+            return; 
         }
         if (count % 2 === 0) {
             e.target.innerHTML = `<img src='${xIcon}' alt="X">`;
