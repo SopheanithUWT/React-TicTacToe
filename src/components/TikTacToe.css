@@ -109,50 +109,50 @@
 
 .win-line-row-0 {
   top: calc(25% - 5px);
-  left: 5%;
-  width: 90%;
+  left: 15%;
+  width: 70%;
   height: 10px;
 }
 
 .win-line-row-1 {
   top: calc(50% - 5px);
-  left: 5%;
-  width: 90%;
+  left: 15%;
+  width: 70%;
   height: 10px;
 }
 
 .win-line-row-2 {
   top: calc(75% - 5px);
-  left: 5%;
-  width: 90%;
+  left: 15%;
+  width: 70%;
   height: 10px;
 }
 
 .win-line-col-0 {
-  top: 5%;
+  top: 15%;
   left: calc(25% - 5px);
-  height: 90%;
+  height: 70%;
   width: 10px;
 }
 
 .win-line-col-1 {
-  top: 5%;
+  top: 15%;
   left: calc(50% - 5px);
-  height: 90%;
+  height: 70%;
   width: 10px;
 }
 
 .win-line-col-2 {
-  top: 5%;
+  top: 15%;
   left: calc(75% - 5px);
-  height: 90%;
+  height: 70%;
   width: 10px;
 }
 
 .win-line-diag-1 {
   top: 50%;
   left: 50%;
-  width: 130%;
+  width: 90%;
   height: 10px;
   transform: translate(-50%, -50%) rotate(45deg);
 }
@@ -160,7 +160,7 @@
 .win-line-diag-2 {
   top: 50%;
   left: 50%;
-  width: 130%;
+  width: 90%;
   height: 10px;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
