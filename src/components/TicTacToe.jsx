@@ -92,79 +92,30 @@ const TikTacToe = () => {
     setCount(0);
   };
 
-  return (
-    <div className="container">
-      <h1 className="title" ref={titleRef}>
-        TicTacToe Game
-      </h1>
-      <div className="board" ref={boardRef}>
-        <div className="row1">
-          <div
-            className="boxes"
-            onClick={(e) => {
-              toggle(e, 0);
-            }}
-          ></div>
-          <div
-            className="boxes"
-            onClick={(e) => {
-              toggle(e, 1);
-            }}
-          ></div>
-          <div
-            className="boxes"
-            onClick={(e) => {
-              toggle(e, 2);
-            }}
-          ></div>
+    return (
+        <div className='container'>
+            <h1 className='title' ref={titleRef}>TicTacToe Game</h1>
+            <div className='board' ref={boardRef}>
+                <div className='row1'>
+                    <div className='boxes' onClick={(e) => {toggle(e,0)}}></div>
+                    <div className='boxes' onClick={(e) => {toggle(e,1)}}></div>
+                    <div className='boxes' onClick={(e) => {toggle(e,2)}}></div>
+                </div>
+                <div className='row2'>
+                    <div className='boxes' onClick={(e) => {toggle(e,3)}}></div>
+                    <div className='boxes' onClick={(e) => {toggle(e,4)}}></div>
+                    <div className='boxes' onClick={(e) => {toggle(e,5)}}></div>
+                </div>
+                <div className='row3'>
+                    <div className='boxes' onClick={(e) => {toggle(e,6)}}></div>
+                    <div className='boxes' onClick={(e) => {toggle(e,7)}}></div>
+                    <div className='boxes' onClick={(e) => {toggle(e,8)}}></div>
+                </div>
+                {winLine && <div className={winLine}></div>}
+            </div>
+            <button className='reset' onClick={() => reset()}>Reset Game</button>
         </div>
-        <div className="row2">
-          <div
-            className="boxes"
-            onClick={(e) => {
-              toggle(e, 3);
-            }}
-          ></div>
-          <div
-            className="boxes"
-            onClick={(e) => {
-              toggle(e, 4);
-            }}
-          ></div>
-          <div
-            className="boxes"
-            onClick={(e) => {
-              toggle(e, 5);
-            }}
-          ></div>
-        </div>
-        <div className="row3">
-          <div
-            className="boxes"
-            onClick={(e) => {
-              toggle(e, 6);
-            }}
-          ></div>
-          <div
-            className="boxes"
-            onClick={(e) => {
-              toggle(e, 7);
-            }}
-          ></div>
-          <div
-            className="boxes"
-            onClick={(e) => {
-              toggle(e, 8);
-            }}
-          ></div>
-        </div>
-        {winLine && <div className={winLine}></div>}
-      </div>
-      <button className="reset" onClick={() => reset()}>
-        Reset Game
-      </button>
-    </div>
-  );
+    );
 };
 
 export default TikTacToe;
